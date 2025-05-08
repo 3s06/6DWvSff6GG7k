@@ -11,10 +11,10 @@ export function HeroPáginaPrincipal() {
                 </div>
             </div>
             <button className="flex items-center justify-center gap-x-[20px]">
-                <Link href={"/signin"} className="bg-white outline outline-white/10 px-4 py-2 rounded-lg text-black font-medium hover:bg-white/70 transition-colors flex items-center justify-center">
+                <Link href={"/signin"} className="bg-white outline outline-white/10 px-4 py-2 rounded-full text-black font-medium hover:bg-white/70 transition-colors flex items-center justify-center">
                     <span>Fazer Login</span>
                 </Link>
-                <Link href={"/signup"} className="bg-white outline outline-white/10 group px-4 py-2 rounded-lg text-black font-medium hover:bg-white/70 transition-colors flex items-center justify-center">
+                <Link href={"/signup"} className="bg-white outline outline-white/10 group px-4 py-2 rounded-full text-black font-medium hover:bg-white/70 transition-colors flex items-center justify-center">
                     <span className="mr-1">Começar a vender</span>
                     <FaRegHandPeace className="group-hover:rotate-45 transition-all ease-in-out duration-300" size={20} />
                 </Link>

@@ -20,14 +20,15 @@ export default function PáginaDeLogin() {
                 <div className="flex flex-col items-center gap-y-[15px] justify-center w-full max-w-md">
                     <div className="flex items-start flex-col w-full">
                         <div className="flex flex-col py-5">
-                            <h1 className="text-[2.75rem] leading-[2.5rem] text-white font-medium ">Bem-vindo a Gateway. Faça login para continuar.</h1>
+                            <h1 className="text-[2rem] leading-[2.5rem] text-white font-medium ">Bem-vindo a Gateway.</h1>
+                            <h1 className="text-[2rem] leading-[2.5rem] text-white font-medium ">Faça login para continuar.</h1>
                         </div>
-                        <p className="font-medium text-white/80 text-base ">Simplifique seu processo de venda e acelere seu desempenho conosco!</p>
+                        <p className="font-medium text-white/80 text-sm ">Simplifique seu processo de venda e acelere seu desempenho conosco!</p>
                     </div>
                     {/* Formulário */}
                     <FormulárioDeLogin />
                     <div className="abolsute bottom-0 flex items-start w-full">
-                        <p className="text-sm text-center text-white/60">Ao fazer login você concorda com nossos{""} <Link href="/terms/service" className="hover:underline hover:underline-offset-4">Termos de Serviço</Link> {""} e {""} <Link href="/terms/privacy" className="hover:underline hover:underline-offset-4">Políticas de Privacidade</Link>.</p>
+                        <p className="text-xs text-center text-white/60">Ao fazer login você concorda com nossos{""} <Link href="/terms/service" className="hover:underline hover:underline-offset-4">Termos de Serviço</Link> {""} e {""} <Link href="/terms/privacy" className="hover:underline hover:underline-offset-4">Políticas de Privacidade</Link>.</p>
                     </div>
                 </div>
             </section>

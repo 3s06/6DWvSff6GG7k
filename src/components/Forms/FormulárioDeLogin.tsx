@@ -16,7 +16,7 @@ export function FormulárioDeLogin() {
 
                 </div>
                 <div className="flex items-start">
-                    <Link href={"/signup"} className="text-sm text-white/80 font-medium hover:underline hover:underline-ofeset-6">
+                    <Link href={"/signup"} className="text-sm text-white/80  font-medium hover:underline hover:underline-ofeset-6">
                         Ainda não tem uma conta? Criar uma
                     </Link>
                 </div>

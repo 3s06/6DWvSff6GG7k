@@ -7,7 +7,7 @@ const LinksNavegaçãoNavbar = [{ name: 'Taxas', path: '#taxas' }, { name: 'Sobr
 export function NavbarPáginaPrincipal() {
     return (
         <header className="p-8 sm:p-12 flex items-center justify-center w-full">
-            <nav className=" flex items-center justify-between w-full px-4 py-4 border border-white/10 rounded-2xl sm:rounded-xl">
+            <nav className="flex items-center justify-between w-full px-6 py-2 border border-white/10 rounded-full">
                 <div className="flex items-center gap-1">
                     <span className="text-xl text-white tracking-tight font-semibold">Gateway</span>
                 </div>
@@ -20,11 +20,11 @@ export function NavbarPáginaPrincipal() {
                         </li>
                     ))}
                 </ul>
-                <div className="hidden sm:flex items-center gap-2">
-                    <Link href="/signin" className="bg-white outline outline-white/50 px-4 py-2 rounded-lg text-black hover:bg-white/70 transition-colors flex items-center justify-center">
-                        Login
+                <div className="hidden sm:flex items-center gap-2 bg-white/5 rounded-full py-1.5 px-2">
+                    <Link href="/signin" className="px-4 py-2 rounded-lg text-black hover:bg-white/70 transition-colors flex items-center justify-center">
+                        <span className="text-white">Login</span>
                     </Link>
-                    <Link href="/signup" className="bg-white outline outline-white/10 px-4 py-2 rounded-lg text-black hover:bg-white/70 transition-colors flex items-center justify-center">
+                    <Link href="/signup" className="bg-white outline outline-white/10 px-4 py-2 rounded-full text-black hover:bg-white/70 transition-colors flex items-center justify-center">
                         <span className="mr-1">Criar conta</span>
                         <MdOutlineArrowOutward size={20} />
                     </Link>
