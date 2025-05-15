@@ -1,29 +1,40 @@
-"use client";
-import { usePathname } from "next/navigation"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { HiOutlineBell } from "react-icons/hi";
 import { ChangeThemeButton } from "./Buttons/TrocarDeTemaBotão";
+import { PegarUsuarioLogado } from "@/lib/server/appwrite";
+import { SymbolValora } from "./Icons/SvgValora";
+import { DropDowMenu } from "./Buttons/MenuUsuário";
 
-export function NavbarDashboard() {
+export async function NavbarDashboard() {
+    const user = await PegarUsuarioLogado();
 
     return (
-        <header className="w-full flex items-center justify-between p-4">
-            <div className="flex items-start">
-                <span className="text-2xl text-black dark:text-white font-semibold tracking-tight">Dashboard</span>
+        <header className="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4">
+        {/* Título + Filtros */}
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full">
+          <span className="text-2xl sm:text-3xl font-semibold text-black dark:text-white tracking-tight">
+            Dashboard
+          </span>
+      
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:max-w-lg">
+            <div className="bg-white dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl flex-1 py-2 px-4">
+              Data
             </div>
-            <div className="flex items-center">
-                <ChangeThemeButton />
-                <button className="size-12 rounded-full hover:bg-black/10 dark:hover:bg-white/10 flex items-center justify-center hover:text-black/80 dark:hover:text-white/80 text-black/60 dark:text-white/60 cursor-pointer mr-3.5 transition-colors ease-in-out duration-300">
-                    <HiOutlineBell size={20} />
-                </button>
-                <button className="rounded-full bg-black/5 dark:bg-white/5 px-3 py-2 gap-x-[9px] hidden sm:flex items-center justify-center cursor-pointer">
-                    <div className="size-8 rounded-full bg-black/10 dark:bg-white/10 "></div>
-                    <span className="text-sm text-black dark:text-white font-medium tracking-tight">Nome Do Usuário</span>
-                    <div className="flex items-center justify-center size-6 rounded-full hover:bg-black/5 dark:hover:bg-white/5">
-                        <MdKeyboardArrowDown size={20} />
-                    </div>
-                </button>
+            <div className="bg-white dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl flex-1 py-2 px-4">
+              Data
             </div>
-        </header>
+          </div>
+        </div>
+      
+        {/* Ações (botões) */}
+        <div className="flex items-center gap-3 sm:gap-4 self-end sm:self-auto">
+          <ChangeThemeButton />
+          <button className="size-12 rounded-full hover:bg-black/10 dark:hover:bg-white/10 flex items-center justify-center text-black/60 dark:text-white/60 hover:text-black/80 dark:hover:text-white/80 transition-colors duration-300">
+            <HiOutlineBell size={20} />
+          </button>
+          <DropDowMenu user={user} />
+        </div>
+      </header>
+      
     )
 }

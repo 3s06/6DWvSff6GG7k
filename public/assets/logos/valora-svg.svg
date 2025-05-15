@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>ValoraPay Logo</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="symbol valora" class="s0" d="m413 129v246h-50v-246zm-100 196h50l0.7 50c0 0-7.3-1.2-16.7-6.5-22.8-12.8-34-43.5-34-43.5zm-220.6-193.2l53.1-2.4c5.4-0.2 12.2 2.6 15.1 6.3l142.4 180.6c2.8 3.5 0.6 6.3-4.9 6.3l-53.6-0.3c-5.3 0-11.8-2.8-14.6-6.2l-141.7-177.3c-2.9-3.7-1.1-6.8 4.2-7z"/>
+</svg>

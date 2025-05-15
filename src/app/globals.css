@@ -44,6 +44,7 @@
 }
 
 :root {
+  --valora: auto;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -119,4 +120,123 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.FDWYhRwgrBqkuTj {
+  -webkit-mask: radial-gradient(34% 22% at 61.199999999999996% 76.8%, #000000 0%, rgba(0, 0, 0, 0) 100%) add;
+  mask: radial-gradient(34% 22% at 61.199999999999996% 76.8%,#000000 0%,rgba(0,0,0,0) 100%) add
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
+
+@layer utilities {
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-carousel {
+    animation: carousel 20s linear infinite;
+  }
+}
+
+
+.framer-4lhjoq {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+ /*  gap: 10px; */
+  height: 1600px;
+  justify-content: flex-start;
+  left: 0;
+  overflow: hidden;
+ /*  padding: 500px 0 200px; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.framer-puew1h {
+  align-items: center;
+  display: flex
+;
+  flex: 1 0 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 6px;
+  height: min-content;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1px;
+}
+
+.framer-1yoxxiy {
+  aspect-ratio: 1.6916666666666667 / 1;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: none;
+  height: var(--valora, 194px);
+  opacity: .5;
+  position: relative;
+  width: 100%;
+}
+
+.framer-hx98nc {
+  aspect-ratio: .9666666666666667 / 1;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: none;
+  height: var(--valora, 340px);
+  opacity: .5;
+  position: relative;
+  width: 100%;
+}
+
+.framer-14v83fo {
+  aspect-ratio: 1.2530864197530864 / 1;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: none;
+    height: var(--valora, 262px);
+    opacity: .5;
+    position: relative;
+    width: 100%;
+}
+
+.framer-xf75wf {
+  align-content: flex-start;
+  align-items: flex-start;
+  aspect-ratio: 1.0587612493382743 / 1;
+ /*  bottom: -20px; */
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  height: var(--valora, 1889px);
+  justify-content: center;
+  left: 0%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+ /*  transform: translate(-50%); */
+  width: 2000px;
+  z-index: 0;
 }
