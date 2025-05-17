@@ -6,15 +6,16 @@ import { z } from "zod";
 
 export async function signin(formData: { email: string; password: string }) {
     try {
-
         const DataValidada = SchemaDeLogin.parse(formData);
         const { account } = await CreateClient();
-    
+
+        /* Cria uma sessão com o Appwrite */
         const session = await account.createEmailPasswordSession(
           DataValidada.email,
           DataValidada.password
         );
-    
+
+        /* Salva a sessão do usuário nos Cookies */
         (await cookies()).set("Sess", session.secret, {
           path: "/",
           httpOnly: true,

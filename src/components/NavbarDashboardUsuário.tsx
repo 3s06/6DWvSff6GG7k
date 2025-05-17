@@ -15,15 +15,6 @@ export async function NavbarDashboard() {
           <span className="text-2xl sm:text-3xl font-semibold text-black dark:text-white tracking-tight">
             Dashboard
           </span>
-      
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:max-w-lg">
-            <div className="bg-white dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl flex-1 py-2 px-4">
-              Data
-            </div>
-            <div className="bg-white dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl flex-1 py-2 px-4">
-              Data
-            </div>
-          </div>
         </div>
       
         {/* Ações (botões) */}
