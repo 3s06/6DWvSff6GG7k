@@ -43,7 +43,7 @@ export function MobileBar() {
               isActive ? "text-black dark:text-white" : "text-gray-400 hover:text-black dark:text-white/60 dark:hover:text-white"
             )}
           >
-            <link.icon  size={35} className="mb-1" />
+            <link.icon  size={25} className="mb-1" />
             <span className="text-base">{link.name}</span>
           </Link>
         );

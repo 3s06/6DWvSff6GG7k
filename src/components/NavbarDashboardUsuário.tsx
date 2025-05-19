@@ -9,7 +9,7 @@ export async function NavbarDashboard() {
     const user = await PegarUsuarioLogado();
 
     return (
-        <header className="w-full flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4">
+        <header className="w-full flex items-start sm:items-center justify-between gap-4 p-4">
         {/* Título + Filtros */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full">
           <span className="text-2xl sm:text-3xl font-semibold text-black dark:text-white tracking-tight">

@@ -34,8 +34,7 @@ export default function RootLayoutDashboard({
     disableTransitionOnChange
   >
     <SidebarDashboard />
-    <div className="flex-1 relative">
-      <MobileBar />
+    <div className="flex-1">
       {children}
     </div>
   </ThemeProvider>
