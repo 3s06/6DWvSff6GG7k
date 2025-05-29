@@ -1,12 +1,14 @@
 export interface PixTransaction {
-    $id?: string;
-    userId: string;
+    Id?: string;
+    UserId: string;
     txid?: string;
-    amount: number;
-    recipientKey: string;
-    description?: string;
-    status: 'PENDING' | 'COMPLETED' | 'FAILED';
-    createdAt: string;
+    Amount: number;
+    Payer: Array<[]>;
+    Status: 'PENDING' | 'PAID' | 'FAILED' | 'EXPIRED' | 'REFUNDED ';
+    CreatedAt: string;
+    UpdatedAt: string;
+    Taxa: number;
+    ExpiresAt: string;
   }
   
   export interface CreatePixRequest {

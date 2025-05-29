@@ -4,6 +4,7 @@
 */
 import { NavbarDashboard } from "@/components/NavbarDashboardUsuário"
 import { MdSearch } from "react-icons/md"
+import { Badge } from "@/components/ui/badge"
 export default function PáginasDeVendas() {
     return (
         <div className="bg-white dark:bg-neutral-950 flex flex-col w-full">
@@ -31,14 +32,35 @@ export default function PáginasDeVendas() {
                 <span className="text-white font-medium tracking-tight ">Filtros</span>
             </button>
           </div>
-            <div className="flex p-2 w-full sm:p-6">
+            <div className="flex flex-col p-2 w-full sm:p-6">
               <div className="bg-neutral-100 w-full border-b border-neutral-400 items-center justify-center rounded-b-none rounded-xl p-2 sm:p-3 py-4 grid grid-cols-6">
                   <span className="text-neutral-500 font-medium tracking-tight text-base truncate">Id</span>
                   <span className="text-neutral-500 font-medium tracking-tight text-base">Data</span>
-                  <span className="text-neutral-500 font-medium tracking-tight text-base">Produto</span>
                   <span className="text-neutral-500 font-medium tracking-tight text-base">Cliente</span> 
                   <span className="text-neutral-500 font-medium tracking-tight text-base">Status</span> 
                   <span className="text-neutral-500 font-medium tracking-tight text-base">Ações</span> 
+              </div>
+              <div className="bg-neutral-100 h-full items-center justify-center p-6 w-full grid grid-cols-6 gap-5">
+                  <span>Teste</span>
+                  <span>26/04/2025</span>
+                  <span>Não Informado</span>
+                  <Badge className="bg-yellow-200/50">
+                    <span className="relative flex size-2 mr-0.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-yellow-500 opacity-75"></span>
+                      <span className="relative inline-flex size-2 rounded-full bg-yellow-400"></span>
+                    </span>
+                    <p className="text-xs text-black">Pendente</p>
+                  </Badge >
+                  <div className="grid grid-cols-3 items-center  w-full gap-1 bg-neutral-50">
+                      <div className="bg-neutral-200 flex items-center justify-center rounded-xl w-[10px] h-[10px]">
+                        
+                      </div>
+                      <div className="bg-neutral-200 flex items-center justify-center rounded-xl w-[10px] h-[10px]">
+                      </div>
+                      <div className="bg-neutral-200 flex items-center justify-center rounded-xl w-[10px] h-[10px]">
+
+                      </div>
+                  </div>
               </div>
           </div>
         </div>

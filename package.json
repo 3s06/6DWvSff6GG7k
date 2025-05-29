@@ -12,6 +12,7 @@
     "@arcjet/inspect": "^1.0.0-beta.7",
     "@arcjet/next": "^1.0.0-beta.7",
     "@hookform/resolvers": "^5.0.1",
+    "@radix-ui/react-slot": "^1.2.3",
     "aos": "^3.0.0-beta.6",
     "appwrite": "^17.0.2",
     "bcryptjs": "^3.0.2",
@@ -29,7 +30,7 @@
     "react-icons": "^5.5.0",
     "recharts": "^2.15.3",
     "resend": "^4.5.1",
-    "sdk-typescript-apis-efi": "^1.0.2",
+    "sdk-node-apis-efi": "^1.2.20",
     "tailwind-merge": "^3.2.0",
     "zod": "^3.24.4"
   },
@@ -45,7 +46,9 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
     "tw-animate-css": "^1.2.9",
-    "typescript": "^5"
+    "typescript": "^5.8.3"
   }
 }

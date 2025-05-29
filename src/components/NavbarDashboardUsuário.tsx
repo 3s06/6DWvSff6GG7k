@@ -1,9 +1,9 @@
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { HiOutlineBell } from "react-icons/hi";
-import { ChangeThemeButton } from "./Buttons/TrocarDeTemaBotão";
+import { ChangeThemeButton } from "./Buttons/change-theme";
 import { PegarUsuarioLogado } from "@/lib/server/appwrite";
 import { SymbolValora } from "./Icons/SvgValora";
-import { DropDowMenu } from "./Buttons/MenuUsuário";
+import { DropDowMenu } from "./Buttons/dropdown-user";
 
 export async function NavbarDashboard() {
     const user = await PegarUsuarioLogado();
