@@ -4,6 +4,7 @@
 */
 
 import { CreateProducButton } from "@/components/Buttons/create-product";
+import { UserProducts } from "@/components/Dashboard/Others/user-products";
 import { NavbarDashboard } from "@/components/NavbarDashboardUsuário";
 import { HandCoinsIcon } from "@/components/ui/hand-coins";
 import { PlusIcon } from "lucide-react";
@@ -20,13 +21,16 @@ export default function PáginaDeProtudos() {
             </div>
             <CreateProducButton />
           </div>
-          <div className="flex p-2 w-full sm:p-6">
-            <div className="bg-neutral-100 w-full border-b border-neutral-400 items-center justify-center rounded-b-none rounded-xl p-2 sm:p-3 py-4 grid grid-cols-5">
-                <span className="text-neutral-500 font-medium tracking-tight text-base truncate">Id do Prod.</span>
-                <span className="text-neutral-500 font-medium tracking-tight text-base">Nome</span>
-                <span className="text-neutral-500 font-medium tracking-tight text-base">Vendas</span>
-                <span className="text-neutral-500 font-medium tracking-tight text-base">Status</span> 
-                <span className="text-neutral-500 font-medium tracking-tight text-base">Ações</span> 
+          <div className="flex flex-col p-2 w-full sm:p-6">
+            <div className="bg-neutral-100 w-full flex flex-col rounded-xl p-2 sm:p-3 py-4">
+                <div className="grid grid-cols-5 border-b border-neutral-400 p-2 "> 
+                  <span className="text-neutral-500 font-medium tracking-tight text-base truncate">Id do Prod.</span>
+                  <span className="text-neutral-500 font-medium tracking-tight text-base">Nome</span>
+                  <span className="text-neutral-500 font-medium tracking-tight text-base">Tipo</span>
+                  <span className="text-neutral-500 font-medium tracking-tight text-base">Status</span> 
+                  <span className="text-neutral-500 font-medium tracking-tight text-base">Ações</span> 
+                </div>
+                <UserProducts />
             </div>
           </div>
         </div>

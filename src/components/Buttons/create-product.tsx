@@ -11,11 +11,11 @@ import { BoxesIcon } from "@/components/ui/boxes";
 
 export function CreateProducButton() {
     const [isOpen, setIsOpen] = useState(false)
-    const [selected, setSelected] = useState<"digital" | null>(null)
+    const [selected, setSelected] = useState<"Digital" | null>(null)
     const [step, setStep] = useState<1 | 2>(1)
 
     const handleContinue = () => {
-        if (selected === "digital") {
+        if (selected === "Digital") {
             setStep(2)
         }
     }
@@ -52,10 +52,10 @@ export function CreateProducButton() {
                                     {/* Produto Digital */}
                                     <button
                                         onClick={() =>
-                                            setSelected((prev) => (prev === "digital" ? null : "digital"))
+                                            setSelected((prev) => (prev === "Digital" ? null : "Digital"))
                                         }
                                         className={`w-full py-5 flex items-center justify-center rounded-3xl border transition-colors duration-200 group cursor-pointer
-                                            ${selected === "digital"
+                                            ${selected === "Digital"
                                                 ? "bg-indigo-50 border-indigo-200 dark:bg-indigo-950 dark:border-indigo-500"
                                                 : "bg-white border-black/10 hover:bg-indigo-50 hover:border-indigo-200 dark:bg-neutral-900 dark:border-white/10 dark:hover:bg-indigo-950 dark:hover:border-indigo-500"
                                             }`}
@@ -63,14 +63,14 @@ export function CreateProducButton() {
                                         <BlocksIcon
                                             size={35}
                                             className={`mr-2 transition-colors
-                                                ${selected === "digital"
+                                                ${selected === "Digital"
                                                     ? "text-indigo-600 dark:text-indigo-400"
                                                     : "text-neutral-400 group-hover:text-indigo-600 dark:text-neutral-500 dark:group-hover:text-indigo-400"
                                                 }`}
                                         />
                                         <div className="flex flex-col items-start leading-tight space-y-[-2px]">
                                             <h1 className={`text-lg font-medium transition-colors
-                                                ${selected === "digital"
+                                                ${selected === "Digital"
                                                     ? "text-indigo-500 dark:text-indigo-400"
                                                     : "group-hover:text-indigo-500 dark:group-hover:text-indigo-400"
                                                 }`}
@@ -78,7 +78,7 @@ export function CreateProducButton() {
                                                 Produto Digital
                                             </h1>
                                             <p className={`text-xs sm:text-sm font-normal transition-colors
-                                                ${selected === "digital"
+                                                ${selected === "Digital"
                                                     ? "text-indigo-400 dark:text-indigo-300"
                                                     : "text-black/60 group-hover:text-indigo-400 dark:text-white/60 dark:group-hover:text-indigo-300"
                                                 }`}
@@ -109,7 +109,7 @@ export function CreateProducButton() {
 
                                 <button
                                     onClick={handleContinue}
-                                    disabled={selected !== "digital"}
+                                    disabled={selected !== "Digital"}
                                     className="mt-2 px-4 py-2 bg-indigo-500 text-white rounded-2xl disabled:bg-indigo-300 hover:bg-indigo-600 transition-colors ease-in-out duration-300 cursor-pointer"
                                 >
                                     Continuar
@@ -117,7 +117,7 @@ export function CreateProducButton() {
                             </>
                         ) : (
                             <div className="w-full mt-4">
-                                <CreateProducForm />
+                                <CreateProducForm selectedType={selected} />
                             </div>
                         )}
                     </div>
