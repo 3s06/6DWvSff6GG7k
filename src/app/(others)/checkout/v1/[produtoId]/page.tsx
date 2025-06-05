@@ -1,7 +1,7 @@
 export default function CheckoutPage() {
     return (
-        <div>
-            
+        <div className="">
+
         </div>
     )
 }
